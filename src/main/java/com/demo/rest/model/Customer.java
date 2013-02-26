@@ -5,13 +5,12 @@ import javax.persistence.*;
 
 /**
  * Entity implementation class for Entity: Customer
- *
+ * 
  */
 @Entity
 public class Customer implements Serializable {
 
-	
-	private static final long serialVersionUID = 1L;
+    private static final long serialVersionUID = 1L;
 
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
@@ -19,31 +18,26 @@ public class Customer implements Serializable {
     private Long id = null;
 
     private String name;
-	private String address;
+    private String address;
 
-	public Long getId() {
+    public Long getId() {
         return id;
     }
-    
-	public String getName() {
+
+    public String getName() {
         return name;
     }
-    
-	public void setName(String name) {
+
+    public void setName(String name) {
         this.name = name;
     }
-    
-	public String getAddress() {
+
+    public String getAddress() {
         return address;
     }
-    
-	public void setAddress(String address) {
+
+    public void setAddress(String address) {
         this.address = address;
     }
-	
-	
-	
-	
 
-   
 }
