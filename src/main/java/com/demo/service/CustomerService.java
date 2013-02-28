@@ -31,6 +31,6 @@ public class CustomerService {
     }
     
     public List<Customer> getCustomerList() {
-        return em.createQuery("SELECT u FROM User u", Customer.class).getResultList();
+        return em.createQuery("SELECT c FROM Customer c", Customer.class).getResultList();
     }
 }
